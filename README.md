@@ -1,6 +1,10 @@
 # NSA-Group-App
 
-This milestone project takes place at the end of the web developer unit of the program. It's meant to put into practice skills learned in courses 6 (Back-end Development & APIs), 7 (React & Redux), and 8 (SQL & data Modeling)Â¸ as shown in the chart below.
+## Initial Board
+https://miro.com/app/board/uXjVOyDZFY4=/
+
+# Project Requirements
+This milestone project takes place at the end of the web developer unit of the program. It's meant to put into practice skills learned in courses 6 (Back-end Development & APIs), 7 (React & Redux), and 8 (SQL & data Modeling)¸ as shown in the chart below.
 
 ### Prompt: MERN Stack Application
 Let's make an MERN Stack Application to practice our skills using React, Redux, and postgreSQL. This application can be just about anything and will assess your ability delegate the workload amongst your peers as well as get much needed practice using the GitHub workflow.
@@ -72,5 +76,3 @@ You can make an application that will teach and quiz your user on any subject yo
 
 #### Social Meet-Up Application
 Have you ever wanted to build a website that connected people based on their interests like music, movies, etc. Here is your opportunity! Build a meet-up application which allows users to find and create events based on their interests!
-
-
