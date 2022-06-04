@@ -5,7 +5,7 @@ function Basket(props) {
     const {cartItems, onAdd, onRemove} = props;
     const itemsPrice = cartItems.reduce((a,c) => a + c.price * c.qty,0);
     const taxPrice = itemsPrice * 0.12;
-    const shippingPrice = itemsPrice >100 ? 0 :25;
+    const shippingPrice = itemsPrice >99 ? 0 :15;
     const totalPrice = itemsPrice + taxPrice + shippingPrice
     return (
        <aside className='block col-1'>
@@ -15,8 +15,8 @@ function Basket(props) {
               <div key={ item.id } className='row'>
              <div className='col-2'>{item.name}</div>
             <div className='col-2'>
-            <button onClick={()=>onAdd(item)} className='add'>+</button>
             <button onClick={()=>onRemove(item)} className='remove'>-</button>
+            <button onClick={()=>onAdd(item)} className='add'>+</button>
             </div>
              <div className='col-2 text-right'>
                  {item.qty}x ${item.price.toFixed(2)}

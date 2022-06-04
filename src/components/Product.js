@@ -1,14 +1,15 @@
 import React from 'react'
 
 export default function Product(props) {
-    const {product, onAdd} = props;
+    const {product, onAdd, onRemove} = props;
   return (
     <div>
         <img className='small' src={product.image} alt= {product.name}></img>
         <h3> {product.name} </h3>
         <div>${product.price}</div>
         <div>
-            <button onClick={()=>onAdd(product)}>Add to Cart</button>
+        <button onClick={()=>onRemove(product)} className='remove'>-</button>
+            <button onClick={()=>onAdd(product)} className='add'>+</button>
         </div>
     </div>
   )
