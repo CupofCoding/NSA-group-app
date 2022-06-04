@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Basket(props) {
+function Summary(props) {
     const {cartItems, onAdd, onRemove} = props;
     const itemsPrice = cartItems.reduce((a,c) => a + c.price * c.qty,0);
     const taxPrice = itemsPrice * 0.12;
@@ -9,9 +9,9 @@ function Basket(props) {
     const totalPrice = itemsPrice + taxPrice + shippingPrice
     return (
        <aside className='block col-1'>
-           <h2>Cart Items</h2>
+           <h2>Order Summary</h2>
            {cartItems.length ===0 && <div>Cart Is Empty</div>}
-               {cartItems.map((item) =>(
+               {/* {cartItems.map((item) =>(
               <div key={ item.id } className='row'>
              <div className='col-2'>{item.name}</div>
             <div className='col-2'>
@@ -22,7 +22,7 @@ function Basket(props) {
                  {item.qty}x ${item.price.toFixed(2)}
                  </div>          
             </div>
-               ))}
+               ))} */}
          {cartItems.length !== 0 && (
             <>
              <hr></hr>
@@ -58,4 +58,4 @@ function Basket(props) {
     )
 }
 
-export default Basket
+export default Summary

@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import Basket from './components/Basket';
+import Basket from './components/Summary';
 import Main from './components/Main';
 import data from './data';
 import { useState } from 'react';
@@ -34,7 +34,9 @@ const onRemove = (product ) => {
     <div className="App">
       <Header countCartItems={cartItems.length}></Header>
     <div className='row'>
-    <Main onAdd = {onAdd} products = {products}></Main>
+   <Main 
+   onAdd = {onAdd}
+   products = {products}></Main>
     <Basket 
     onAdd ={onAdd}  
     onRemove ={onRemove}
