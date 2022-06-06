@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Product(props) {
-    const { product, addToCart } = props;
+    const { product, addToCart, addToWishList } = props;
 
   return (
     <div>
@@ -10,7 +10,7 @@ export default function Product(props) {
       <div><strong>$</strong>{product.price}</div>
       <div>
           <button onClick={() => addToCart(product)}>Add to Cart</button>
-          <button>Add to Wish-List</button>
+          <button onClick={() => addToWishList(product)} >Add to Wish-List</button>
       </div>
     </div>
   );

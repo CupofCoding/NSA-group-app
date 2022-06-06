@@ -62,3 +62,7 @@
 .description {
   font-size: 10px;
 }
+
+.item-price {
+  padding-top: 1rem;
+}
