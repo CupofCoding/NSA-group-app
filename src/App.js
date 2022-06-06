@@ -4,8 +4,28 @@ import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Wishlist from './components/Wishlist';
 import Cart from './components/Cart.js'
+import data from './data.js'
+import { useState } from 'react';
 
 function App() {
+  const { products } = data;
+  const [ items, setItems ] = useState([]);
+  const addToCart = (product) => {
+    const exist = items.find((x) => x.id === product.id)
+    if (exist) {
+      setItems(items.map((x) => x.id === product.id ? {...exist, qty: exist.qty + 1} : x));
+    } else {setItems([...items, {...product, qty: 1}])}
+  };
+
+  const removeFromCart = (product) => {
+    const exist = items.find((x) => x.id === product.id)
+    if (exist.qty === 1) {
+      setItems(items.filter((x) => x.id !== product.id));
+    } else {
+      setItems(items.map((x) => x.id === product.id ? {...exist, qty: exist.qty - 1} : x));
+    }
+  };
+
   return (
     <div className="App">
       <Router>
@@ -27,8 +47,8 @@ function App() {
 
         <div>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/Cart' element={<Cart />} />
+            <Route path='/' element={<Home addToCart={addToCart} products={products} />} />
+            <Route path='/Cart' element={<Cart addToCart={addToCart} removeFromCart={removeFromCart} items={items} />} />
             <Route path='/Wishlist' element={<Wishlist />} />
           </Routes>
         </div>
