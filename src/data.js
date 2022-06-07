@@ -1,7 +1,7 @@
 const data = {
     products: [
         {
-<<<<<<< HEAD
+// <<<<<<< HEAD
             id: '1',
             name: 'Red Devil Wind-breaker',
             description: 'New Mugen Soul Japanese Streetwear Outfits.',

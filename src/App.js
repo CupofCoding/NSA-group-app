@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import './App.css';
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 
