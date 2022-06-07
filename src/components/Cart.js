@@ -24,9 +24,10 @@ export default function Cart (props) {
                             </div>
                             <div className="cart-container">
                             {items.map((item) => (
-                                <div key={item.id}>
+                                <div key={item.id} className="cart-div">
                                     <Card.Img className="small" src={item.image} />
                                     <h3>{item.name}</h3>
+                                    <div>{item.size}</div>
                                     <p className="description">{item.description}</p>
                                     <div className="text-right">
                                         {item.qty} x ${item.price.toFixed(2)}

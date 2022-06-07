@@ -1,41 +1,46 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import React from 'react';
 
 export default function Product(props) {
     const { product, addToCart, addToWishList } = props;
 
   return (
-    <div>
-      <img className="small" src={product.image}></img>
-      <h3>{product.name}</h3>
-      <div><strong>$</strong>{product.price}</div>
+    <div className='product-div'>
       <div>
-          <button onClick={() => addToCart(product)}>Add to Cart</button>
-          <button onClick={() => addToWishList(product)} >Add to Wish-List</button>
+        <a href='/ProductPage'>
+            <img className="small" src={product.image}></img>
+        </a>
+        <h3>{product.name}</h3>
+        <div>{product.size}</div>
+        <div><strong>$</strong>{product.price}</div>
+        <div className='div-btn'>
+            <button onClick={() => addToCart(product)}>Add to Cart</button>
+            <button onClick={() => addToWishList(product)} >Add to Wish-List</button>
+        </div>
       </div>
     </div>
   );
 }
-=======
-import React from 'react'
+// // =======
+// import React from 'react'
 
-export default function Product(props) {
-    const {product, onAdd, onRemove} = props;
-  return (
-    <div>
-        <img className='small' src={product.image} alt= {product.name}></img>
-        <h3> {product.name} </h3>
-        <div>${product.price}</div>
-        <div>
-            <button onClick={()=>onAdd(product)}>+</button>
-            {/* item count goes here */}
-            <button onClick={()=>onSubtract(product)}>-</button>
+// export default function Product(props) {
+//     const {product, onAdd, onRemove} = props;
+//   return (
+//     <div>
+//         <img className='small' src={product.image} alt= {product.name}></img>
+//         <h3> {product.name} </h3>
+//         <div>${product.price}</div>
+//         <div>
+//             <button onClick={()=>onAdd(product)}>+</button>
+//             {/* item count goes here */}
+//             <button onClick={()=>onSubtract(product)}>-</button>
 
-            <button onClick={()=>onRemove(product)}>Remove</button>
-            </div>
-    </div>
-  )
-}
+//             <button onClick={()=>onRemove(product)}>Remove</button>
+//             </div>
+//     </div>
+//   )
+// }
 
 
 // function Summary(props) {
@@ -59,4 +64,4 @@ export default function Product(props) {
 //   }
 //     </div>
 //     }
->>>>>>> origin/big-bang
+// >>>>>>> origin/big-bang
