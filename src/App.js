@@ -72,7 +72,7 @@ function App() {
         </div>
 
       </Router>
-=======
+{/* =======
 import Header from './components/Header';
 import Basket from './components/Summary';
 import Main from './components/Main';
@@ -131,9 +131,9 @@ const onRemove = (product ) => {
     cartItems = {cartItems}>
     </Basket>
     </div>
->>>>>>> origin/big-bang
+>>>>>>> origin/big-bang*/}
     </div>
   );
-}
+} 
 
 export default App;
