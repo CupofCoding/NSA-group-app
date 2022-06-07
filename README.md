@@ -1,7 +1,10 @@
 # NSA-Group-App
 
-## Initial Board
+## Initial Board / Setup
 https://miro.com/app/board/uXjVOyDZFY4=/
+npm i bootstrap react-bootstrap
+npm i react-router-dom
+npm i react-dom
 
 # Project Requirements
 This milestone project takes place at the end of the web developer unit of the program. It's meant to put into practice skills learned in courses 6 (Back-end Development & APIs), 7 (React & Redux), and 8 (SQL & data Modeling)¸ as shown in the chart below.
