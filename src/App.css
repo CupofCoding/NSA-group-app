@@ -135,7 +135,7 @@ ul {
   align-items: center;
   width: 90%;
   margin: auto;
-
+  margin-top: 5vh;
 }
 .img-container {
   flex: 1;
@@ -177,4 +177,21 @@ ul {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+}
+
+.products-cards{
+  display: flex;
+  width: 100%;  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-div {
+  width: 25vw;
+}
+
+.product-img {
+  width: 20vw;
 }

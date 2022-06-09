@@ -42,10 +42,10 @@ export default function Home (props) {
                 </Form>
             </Container>
             
-            <Container className="Container">
+            <Container className="products-Container">
                 <h2>Products</h2>
                 <hr></hr>
-                <div>
+                <div className="products-cards">
                     {products.map((product) => (
                     <Product key={product.id} product={product} addToCart={addToCart} addToWishList={addToWishList} ></Product>
                     ))}

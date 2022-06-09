@@ -7,8 +7,8 @@ export default function Product(props) {
   return (
     <div className='product-div'>
       <div>
-        <a href='/ProductPage'>
-            <img className="small" src={product.image}></img>
+        <a href='/ProductPage' className='product-link'>
+            <img className="small product-image" src={product.image}></img>
         </a>
         <h3>{product.name}</h3>
         <div>{product.size}</div>
