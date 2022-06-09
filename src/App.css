@@ -24,6 +24,11 @@ navbar > * {
   font-size: large;
 }
 
+.nav-links:hover {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 ul {
   display: flex;
   justify-content: space-evenly;
@@ -188,9 +193,9 @@ ul {
   gap: 10px;
 }
 
-.product-div {
+/* .product-div {
   width: 25vw;
-}
+} */
 
 .product-img {
   width: 20vw;
