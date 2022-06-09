@@ -25,13 +25,17 @@ export default function ProductPage(props) {
         <div>
             ${products.price}
         </div>
-        <div>
+        <div className='product-options'>
+          <div className='product-color'>
             <Form>
                 <label for="color">Color</label>
                 <input type="radio" id="color" name="color" />
                 <input type="radio" id="color" name="color" />
                 <input type="radio" id="color" name="color" />
-                
+              </Form>
+            </div>
+            <div className='product-size'>
+            <Form>
                 <label for='size'>Size</label>
                 <select id='size'>
                     <option>----</option>
@@ -41,10 +45,11 @@ export default function ProductPage(props) {
                     <option>Extra Large</option>
                 </select>
             </Form>
-            <div>
-                <button>-</button>
-                <button>+</button>
-            </div>
+          </div>
+          <div className='product-qty-button'>
+              <button>-</button>
+              <button>+</button>
+          </div>
         </div>
       </Container>
     </div>

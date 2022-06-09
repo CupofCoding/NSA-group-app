@@ -5,7 +5,7 @@ const pool = new Pool({ //set up config inside here
     password: "aim4more",
     host: "localhost",
     port: 5432,
-    database: "todo_react"
+    database: "nsa-group-app"
 });
 
 module.exports = pool;

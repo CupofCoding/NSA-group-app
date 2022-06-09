@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap"
-import Product from "./Product";
+import Product from "../components/Product";
 import { Form } from "react-bootstrap";
 
 export default function Home (props) {
@@ -11,30 +11,32 @@ export default function Home (props) {
                 <h2>Category</h2>
             </Container>
             
-            <Container className='nav-container'>
-                <Form>
-                    <select>
+            <Container className='filter-container'>
+                <Form className="form-left">
+                    <select className="filter-option">
                         <option>Brand</option>
                         <option>Nike</option>
                         <option>UnderArmor</option>
                         <option>Adidas</option>
                         <option>Polo</option>
                     </select>
-                    <select>
+                    <select className="filter-option">
                         <option>Size</option>
                         <option>Small</option>
                         <option>Medium</option>
                         <option>Large</option>
                         <option>Extra Large</option>
                     </select>
-                    <select>
+                    <select className="filter-option">
                         <option>Color</option>
                         <option>Black</option>
                         <option>White</option>
                         <option>Grey</option>
                         <option>Blue</option>
                     </select>
-                    <select>
+                </Form>
+                <Form className="form-right">
+                    <select className="filter-option">
                         <option>Order by</option>
                     </select>
                 </Form>

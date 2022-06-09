@@ -48,21 +48,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <header>
-          <div className='nav-bar'>
-            <ul>
-              <li>
-                <Link style={{ textDecoration: 'none', color: 'white' }} to='/'>Home</Link>
-              </li>
-              <li>
-                <Link style={{ textDecoration: 'none', color: 'white' }} to='/Cart'>Cart</Link>
-              </li>
-              <li>
-                <Link style={{ textDecoration: 'none', color: 'white' }} to='/Wishlist'>Wishlist</Link>
-              </li>
-            </ul>
+        <navbar>
+          <div className='logo'>
+            <a><Link style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold'}} to='/'>Chips N Dip.</Link></a>
           </div>
-        </header>
+          <div className='nav-links'>
+            <a><Link style={{ textDecoration: 'none', color: 'white' }} to='/'>Home</Link></a>
+            <a><Link style={{ textDecoration: 'none', color: 'white' }} to='/Cart'>Cart</Link></a>
+            <a><Link style={{ textDecoration: 'none', color: 'white' }} to='/Wishlist'>Wishlist</Link></a>
+          </div>
+        </navbar>
 
         <div>
           <Routes>
